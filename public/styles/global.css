@@ -1,0 +1,147 @@
+:root{
+    --themeColor1: #333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* setup header */
+#content{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    width: 210px;
+    height: 210px;
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+    list-style-type: none;
+    border-radius: 0 8px 8px 0;
+    background-color: var(--themeColor1);
+}
+
+/* header ul li{} */
+
+header ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 18px 24px;
+}
+
+header ul li a:hover {
+    background-color:#666666;
+    border-radius: 8px;
+}
+
+/*-------------------------------------------------Setup footer */
+footer{
+    background-color: var(--themeColor1);
+    color: white;
+
+    height: 100%;
+    padding: 16px 16px 0 16px;
+
+    border-radius: 8px;
+}
+
+footer .contact{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 200px;
+}
+
+footer .contact div{
+    margin-left: 24px;
+}
+
+footer .contact h2{
+    margin-bottom: 24px;
+}
+
+footer .contact ul {
+    list-style-type: none;
+}
+
+footer .contact ul li{
+    font-size: 18px;
+
+    margin-bottom: 16px;
+}
+
+footer h3{
+    border-top: 1px solid white;
+    padding: 24px;
+    text-align: center;
+}
+/*--------------------------------------------------setup responsive header-----------------------------------*/
+@media (max-width: 500px){
+    header{
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    header img{
+        width: 220px;
+        height: 220px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    header ul{
+        display: block;
+        border-radius: 8px;
+    }
+    
+    /* header ul li{} */
+
+    header ul li a{
+        padding: 12px 18px;
+    }
+
+    main h1{
+        font-size: 42px;
+        text-align: center;
+    }
+
+    main p{
+        font-size: 22px;
+        text-align: center;
+    }
+
+/*--------------------------------------------------setup responsive footer-----------------------------------*/
+
+    footer .contact{
+        display: block;
+        height: 400px;
+    }
+
+    footer .contact div{
+        margin-left: 0;
+        margin-bottom: 36px;
+    } 
+
+    footer h3{
+        font-size: 16px;
+    }
+}

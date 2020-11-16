@@ -1,0 +1,131 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles/servicos.css">
+{% endblock styles %}
+
+{% block main %}
+        <main>
+            <h1>Talvez algum texto</h1>
+            <div class="gridConteiner">
+                
+                <div id="item-1" class="gridItem">
+                    <div>
+                        <h2>ORIENTAÇÃO METODOLÓGICA</h2>
+                        <h3>Construção e estruturação de seu trabalho</h3>
+                        <p>
+                            Disponibilizamos o serviço de assessoria de trabalhos acadêmicos para a 
+                            elaboração de trabalhos teóricos em várias áreas do conhecimento. 
+                            Este serviço é direcionado àqueles que estão com dificuldade em iniciar 
+                            ou concluir suas pesquisas. Oferecemos assessoramento do início ao fim.
+                        </p>
+                    </div>
+
+                    <button class="b1" onclick="expandContent('item-1', 'b1', 'b2')">
+                        <i class="material-icons" onclick="">expand_more</i>
+                    </button>
+
+                    <button class="b2" onclick="compressContent('item-1', 'b1', 'b2')">
+                        <i class="material-icons" onclick="">expand_less</i>
+                    </button>
+                </div>
+
+                <div id="item-2" class="gridItem">
+                    <div>
+                        <h2>NORMALIZAÇÃO</h2>
+                        <h3>ABNT, APA, Vancouver, Normas Institucionais</h3>
+                        <p>
+                            Este serviço consiste na adequação dos trabalhos acadêmicos às
+                            normas da Associação Brasileira de Normas Técnicas (ABNT), American 
+                            Psychological Association (APA), Vancouver ou institucionais. 
+                            Abrange a formatação geral completa (elementos pré-textuais, textuais e 
+                            pós-textuais) e a pesquisa de citações e referências em bases de dados oficiais.
+                        </p>
+                    </div>
+                    <button class="b1" onclick="expandContent('item-2', 'b1', 'b2')">
+                        <i class="material-icons" onclick="">expand_more</i>
+                    </button>
+                    <button class="b2" onclick="compressContent('item-2', 'b1', 'b2')">
+                        <i class="material-icons" onclick="">expand_less</i>
+                    </button>
+                </div>
+                
+                <div id="item-3" class="gridItem">
+                    <div>
+                        <h2>REVISÃO GRAMATICAL</h2>
+                        <h3>Correção textual de seu trabalho</h3>
+                        <p>
+                            Este serviço visa a clareza do texto, adequação à linguagem acadêmica e científica 
+                            e atualização quanto ao novo Acordo Ortográfico da Língua Portuguesa. Considera 
+                            os seguintes aspectos: ortografia, acentuação, concordância nominal e verbal, 
+                            pontuação, coesão e coerência textual, vícios de linguagem, ambiguidade de frases 
+                            ou palavras, repetições e outros vícios linguísticos possíveis de ocorrer.
+                        </p>
+                    </div>
+                    <button class="b1" onclick="expandContent('item-3', 'b1', 'b2')">
+                        <i class="material-icons" onclick="">expand_more</i>
+                    </button>
+                    <button class="b2" onclick="compressContent('item-3', 'b1', 'b2')">
+                        <i class="material-icons" onclick="">expand_less</i>
+                    </button>
+                </div>
+                
+                <div id="item-4" class="gridItem">
+                    <div>
+                        <h2>FICHA CATALOGRÁFICA</h2>
+                        <h3>Catalogação de seu trabalho</h3>
+                        <p>
+                            Elaboração de Ficha Catalográfica de Trabalhos de Conclusão de Curso, 
+                            Dissertações, Teses e Livros. Utilizamos a 23ª edição da Classificação 
+                            Decimal de Dewey (CDD), a 2ª edição do Código de Catalogação Anglo Americano (AACR2)
+                            , o Subject Headings e a Tabela de Cutter.
+                        </p>
+                    </div>
+                    <button class="b1" onclick="expandContent('item-4', 'b1', 'b2')">
+                        <i class="material-icons" onclick="">expand_more</i>
+                    </button>
+                    <button class="b2" onclick="compressContent('item-4', 'b1', 'b2')">
+                        <i class="material-icons" onclick="">expand_less</i>
+                    </button>
+                </div>
+
+                <div id="item-5" class="gridItem">
+                    <div>
+                        <h2>CURRÍCULO LATTES E ORCID</h2>
+                        <h3>Criação e Atualização de seu currículo acadêmico</h3>
+                        <p>
+                            Criação e Atualização de currículos em ambas as plataformas.
+                        </p>
+                    </div>
+                    <button class="b1" onclick="expandContent('item-5', 'b1', 'b2')">
+                        <i class="material-icons" onclick="">expand_more</i>
+                    </button>
+                    <button class="b2" onclick="compressContent('item-5', 'b1', 'b2')">
+                        <i class="material-icons" onclick="">expand_less</i>
+                    </button>
+                </div>
+                
+                <div id="item-6" class="gridItem">
+                    <div>
+                        <h2>TRADUÇÃO</h2>
+                        <h3>Tradução de textos para Língua Inglesa</h3>
+                        <p>
+                            Tradução fiel de textos do português para o inglês e vice-versa, 
+                            oferecendo atenção especial aos termos técnicos de diferentes áreas do conhecimento.
+                        </p>
+                    </div>
+                    <button class="b1" onclick="expandContent('item-6', 'b1', 'b2')">
+                        <i class="material-icons" onclick="">expand_more</i>
+                    </button>
+                    <button class="b2" onclick="compressContent('item-6', 'b1', 'b2')">
+                        <i class="material-icons" onclick="">expand_less</i>
+                    </button>
+                </div>
+            </div>
+        </main>
+{% endblock main %}
+
+{% block scripts %}
+    <script src="/scripts/servicos.js"></script>
+{% endblock scripts %}
